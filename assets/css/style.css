@@ -1,19 +1,37 @@
 h1 {
-    font-family: sans-serif;
+    font-family: 'helvetica';
+  src: url('/assets/fonts/Helvetica-Bold.ttf') format('ttf'),
+  font-weight: bold;
+  font-style: bold;
 
 }
 h2 {
-    font-family: sans-serif;
+    font-family: 'helvetica';
+  src: url('/assets/fonts/Helvetica-Bold.ttf') format('ttf'),
+  font-weight: bold;
+  font-style: bold;
 }
 p {
-    font-family: sans-serif;
+    font-family: 'helvetica';
+  src: url('/assets/fonts/Helvetica.ttf') format('ttf'),
+  font-weight: normal;
+  font-style: normal;
 }
 i {
-    font-family: sans-serif;
+    font-family: 'helvetica';
+  src: url('/assets/fonts/Helvetica-Oblique.ttf') format('ttf'),
+  font-weight: normal;
+  font-style: italic;
 }
 li {
-    font-family: sans-serif;
+    font-family: 'helvetica';
+  src: url('/assets/fonts/Helvetica.ttf') format('ttf'),
+  font-weight: normal;
+  font-style: normal;
 }
 a {
-    font-family: sans-serif;
+    font-family: 'helvetica';
+  src: url('/assets/fonts/Helvetica.ttf') format('ttf'),
+  font-weight: normal;
+  font-style: normal;
 }

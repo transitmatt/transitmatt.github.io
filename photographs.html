@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Photographs</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-  </head>
-  <body>
-  <a href="https://imagedelivery.net/jdWMhVH-CbfKe5Pbmw-19Q/94af8ab9-3c58-4aa9-172d-0ee3b3e29e00/public"><img src="https://imagedelivery.net/jdWMhVH-CbfKe5Pbmw-19Q/94af8ab9-3c58-4aa9-172d-0ee3b3e29e00/public"></a>
-<br><i>Muni PCC Streetcar #1040 at Castro and Market. 1040 was the last PCC streetcar built.</i>
-  </body>
-</html> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt - Photos</title>
+    <link rel="icon" type="image/x-icon" href="https://i.ebayimg.com/images/g/zg0AAOSwz3pmJNvB/s-l1200.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="photos.html">PHOTOS</a></li>
+            <li><a href="survey.html"> SURVEY</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+  <header>
+    <h1>Photos</h1>
+    <p>Click the buttons below to change the layout of the photos.</p>
+  </header>
+<button onclick="one()">100%</button>
+<button onclick="four()">25%</button>
+<div class="row">
+  <div class="column">
+    <figure>
+    <img src="images/000002150001.jpg" style="width:100%">
+    <figcaption>Kodak UltraMax 400, Nikon N80</figcaption>
+    <img src="images/000002150007.jpg" style="width:100%">
+    <figcaption>Kodak UltraMax 400, Nikon N80</figcaption>
+    <img src="images/HMPC017.jpg" style="width:100%">
+    <figcaption>Kodak Tri-X 400, Nikon F3HP</figcaption>
+    <img src="images/HMPC018.jpg" style="width:100%">
+     <figcaption>Kodak Tri-X 400, Nikon F3HP</figcaption>
+    <img src="images/HMPC019.jpg" style="width:100%">
+     <figcaption>Kodak Tri-X 400, Nikon F3HP</figcaption>
+  </figure>
+  </div>
+  <div class="column">
+    <figure>
+    <img src="images/HMPC020.jpg" style="width:100%">
+     <figcaption>Kodak Tri-X 400, Nikon F3HP</figcaption>
+    <img src="images/HMPC031.jpg" style="width:100%">
+    <figcaption>Kodak Tri-X 400, Nikon F3HP</figcaption>
+   
+    <img src="images/F3-1-28.jpg" style="width:100%">
+    <figcaption>Kodak Portra 400, Nikon F3</figcaption>
+  </figure>
+  </div>
+  <div class="column">
+    <img src="images/HMPC034.jpg" style="width:100%">
+    <figcaption>Kodak Tri-X 400, Nikon F3HP</figcaption>
+    <img src="images/F3-1-05.jpg" style="width:100%">
+    <figcaption>Kodak Portra 400, Nikon F3</figcaption>
+    <img src="images/F3-1-12.jpg" style="width:100%">
+    <figcaption>Kodak Portra 400, Nikon F3</figcaption>
+    <img src="images/F3-1-33.jpg" style="width:100%">
+    <figcaption>Kodak Portra 400, Nikon F3</figcaption>
+    <img src="images/F3-1-34.jpg" style="width:100%">
+    <figcaption>Kodak Portra 400, Nikon F3</figcaption>
+    <img src="images/000096300026.jpg" style="width:100%">
+    <figcaption>Kodak UltraMax 400, Nikon N80</figcaption>
+  </div>
+</div>
+</body>
+<script>
+var elements = document.getElementsByClassName("column");
+
+var i;
+
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+</script>
